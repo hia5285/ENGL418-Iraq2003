@@ -734,12 +734,14 @@ em {
 }
 
 /* ═══════════════════════════════════════════════════════════
-   SCHEMATIC MAP (SVG)
+   SCHEMATIC MAP
    ═══════════════════════════════════════════════════════════ */
 .schematic-map {
   margin: 32px 0;
   border: 1px solid var(--border);
+  border-top: 3px solid var(--border);
   background: var(--bg-panel);
+  overflow: hidden;
 }
 
 .map-title {
@@ -753,39 +755,21 @@ em {
   border-bottom: 1px solid var(--border);
 }
 
-.occupation-svg {
+.map-image {
   width: 100%;
   height: auto;
   display: block;
-  padding: 16px;
+  object-fit: cover;
 }
 
-.svg-country-label {
-  font-family: var(--font-heading);
-  font-size: 14px;
-  font-weight: 700;
-  fill: var(--border-light);
-  letter-spacing: 6px;
-}
-
-.svg-phase-label {
-  font-family: var(--font-heading);
+.map-caption {
+  padding: 10px 16px;
+  font-family: var(--font-mono);
   font-size: 10px;
-  font-weight: 700;
-  fill: var(--text-bright);
-  letter-spacing: 1px;
-}
-
-.svg-phase-detail {
-  font-family: var(--font-mono);
-  font-size: 8px;
-  fill: var(--text-muted);
-}
-
-.svg-city-label {
-  font-family: var(--font-mono);
-  font-size: 8px;
-  fill: var(--text-muted);
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  background: var(--bg-surface);
 }
 
 /* ═══════════════════════════════════════════════════════════
